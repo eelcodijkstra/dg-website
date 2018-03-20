@@ -1,18 +1,11 @@
 ---
 layout: page
-title: About
+title: Over digitale geletterdheid
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Deze website is bedoeld als ondersteuning voor docenten en scholen die
+met Digitale Geletterdheid aan de slag willen.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Deze website is een initiatief van i&i, de vakvereniging voor docenten
+informatica en digitale geletterdheid.
