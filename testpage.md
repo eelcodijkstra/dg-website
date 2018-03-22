@@ -8,6 +8,14 @@ title: Test
 Dit is een testpagina, voor het uitproberen van Liquid constructies, in het
 bijzonder voor het maken van lijsten van pagina's.
 
+Pagina's met een niet-lege titel:
+{%- assign select_pages = site.pages | where_exp:"item", "item.title != nil" -%}
+{% for my_page in select_pages %}
+* <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+{%- endfor %}
+
+<hr>
+
 * [Pages]({{ site.baseurl }}/pages/computational-thinking.html)
 * [Computational Thinking]({{"/pages/computational-thinking.html"|relative_url}})
 * dit is een opsomming (van allerlei pagina's)
@@ -21,14 +29,10 @@ header pages:
 
 {% for path in site.header_pages %}
   {%- assign my_page = site.pages | where: "path", path | first -%}
-* {{ my_page.title }}
+* <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
 {% endfor %}
 
-pagina's met een niet-lege titel:
-{%- assign select_pages = site.pages | where_exp:"item", "item.title != nil" -%}
-{% for my_page in select_pages %}
-* {{ my_page.title }}
-{%- endfor %}
+
 
 Hier voegt Liquid kennelijk soms een `<p>` toe...
 de truc om deze weg te krijgen is het `-` teken bij de endfor en/of andere
@@ -41,7 +45,7 @@ Pagina's met een niet-lege titel:
 
 {% for my_page in site.pages %}
   {%- if my_page.title %}
-* {{ my_page.title }}
+* <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
   {%- endif -%}
 {%- endfor %}
 
