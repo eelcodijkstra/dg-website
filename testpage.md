@@ -79,11 +79,11 @@ Header pages:
 
 <h3>Agenda items</h3>
 
-{% assign my_agenda = site.agenda | sort "agendadate" %}
-{% for item in my_agenda %}
+{%- assign my_agenda = site.agenda | sort "agendadate" -%}
+{%- for item in my_agenda -%}
 * <a class="page-link" href="{{ item.url | relative_url }}">
 {{ item.agendadate }} - {{ item.title | escape }} </a> <br>
-{% endfor %}
+{% endfor -%}
 
 <h3> ToDo's </h3>
 
@@ -92,4 +92,4 @@ Header pages:
 * schrijven van de eerste posts.
 * pagina's: inhoudsopgave, met indeling op labels/tags
 * zijbalk (optioneel) voor navigatie
-* 
+*
