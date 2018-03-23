@@ -44,3 +44,9 @@ plugins:
 header_pages:
   - about.md
   - testpage.md
+
+collections:
+  agenda:
+    output: true
+
+# add more collections?
