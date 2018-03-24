@@ -79,11 +79,26 @@ Header pages:
 
 <h3>Agenda items</h3>
 
-{%- assign my_agenda = site.agenda | sort "agendadate" -%}
+{%- assign my_agenda = site.agenda | sort: "agendadate" -%}
 {%- for item in my_agenda -%}
 * <a class="page-link" href="{{ item.url | relative_url }}">
 {{ item.agendadate }} - {{ item.title | escape }} </a> <br>
 {% endfor -%}
+
+<h3>Documenten</h3>
+
+{%- assign my_docs = site.docs | group_by: "category" -%}
+{% for cat in my_docs %}
+  {%- assign cat_title = site.data.categories[cat.name].title -%}
+  {%- assign cat_page = site.pages | where:"title", cat_title | first -%}
+<h4><a class="page-link" href="{{ cat_page.url | relative_url }}"> {{ cat_page.title | escape }} </a></h4>
+
+  {% for item in cat.items -%}
+* <a class="page-link" href="{{ item.url | relative_url }}"> {{ item.title | escape }} </a>
+  {% endfor -%}
+{% endfor %}
+
+<hr>
 
 <h3> ToDo's </h3>
 
@@ -93,3 +108,7 @@ Header pages:
 * pagina's: inhoudsopgave, met indeling op labels/tags
 * zijbalk (optioneel) voor navigatie
 *
+
+<h3> Data </h3>
+
+{{ site.data.categories | inspect }}

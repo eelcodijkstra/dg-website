@@ -1,6 +1,7 @@
 ---
 layout: page
 title: "Programmeren"
+category: programmeren
 ---
 
 (Over programmeren)

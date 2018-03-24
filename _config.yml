@@ -48,5 +48,7 @@ header_pages:
 collections:
   agenda:
     output: true
+  docs:
+    output: true
 
 # add more collections?
