@@ -32,7 +32,7 @@ header pages:
 * <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
 {% endfor %}
 
-
+{{site.header_pages | inspect}}
 
 Hier voegt Liquid kennelijk soms een `<p>` toe...
 de truc om deze weg te krijgen is het `-` teken bij de endfor en/of andere

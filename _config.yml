@@ -43,6 +43,8 @@ plugins:
 
 header_pages:
   - about.md
+  - pages/agenda.md
+  - pages/documenten.md
   - testpage.md
 
 collections:
