@@ -112,3 +112,17 @@ Header pages:
 <h3> Data </h3>
 
 {{ site.data.categories | inspect }}
+
+<h3> Discourse </h3>
+
+<div id='discourse-comments'></div>
+<script type="text/javascript">
+  DiscourseEmbed = { discourseUrl: 'https://plein.infvo.nl/',
+                     discourseEmbedUrl: '{{site.url}}{{page.url}}' };
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
