@@ -118,7 +118,7 @@ Header pages:
 <div id='discourse-comments'></div>
 <script type="text/javascript">
   DiscourseEmbed = { discourseUrl: 'https://plein.infvo.nl/',
-                     discourseEmbedUrl: '{{site.baseurl}}{{page.url}}' };
+                     discourseEmbedUrl: 'https://eelcodijkstra.github.io{{site.baseurl}}{{page.url}}' };
 
   (function() {
     var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
