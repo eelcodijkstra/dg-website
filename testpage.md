@@ -16,7 +16,7 @@ Pagina's met een niet-lege titel:
 
 <hr>
 
-* [Pages]({{ site.baseurl }}/pages/computational-thinking.html)
+* [Computational Thinking]({{ site.baseurl }}/pages/computational-thinking.html)
 * [Computational Thinking]({{"/pages/computational-thinking.html"|relative_url}})
 * dit is een opsomming (van allerlei pagina's)
 * in **Markdown**

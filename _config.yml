@@ -42,10 +42,10 @@ plugins:
 #   - vendor/ruby/
 
 header_pages:
-  - about.md
   - pages/agenda.md
   - pages/documenten.md
   - testpage.md
+  - about.md
 
 collections:
   agenda:
@@ -53,4 +53,8 @@ collections:
   docs:
     output: true
 
-# add more collections?
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

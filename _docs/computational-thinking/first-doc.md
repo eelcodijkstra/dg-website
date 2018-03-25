@@ -5,4 +5,5 @@ category: computational-thinking
 ---
 Dit is een document.
 
-{{ category }}
+Categorie: {{ page.category }} <br>
+Titel: *{{ page.title }}*
