@@ -103,7 +103,7 @@ Header pages:
 <h3> ToDo's </h3>
 
 * toevoegen van Discourse commentaar
-    * werkt dit ook voor Github Pages?
+    * werkt dit ook voor Github Pages? (Ja)
 * schrijven van de eerste posts.
 * pagina's: inhoudsopgave, met indeling op labels/tags
 * zijbalk (optioneel) voor navigatie
